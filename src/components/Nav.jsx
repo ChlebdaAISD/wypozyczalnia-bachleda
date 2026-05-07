@@ -1,6 +1,6 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import { Link } from 'wouter'
-import { ChevronDown } from 'lucide-react'
+import { ChevronDown, Phone, Menu, X } from 'lucide-react'
 import { Container } from './ui/Container.jsx'
 import { AnchorLink } from './ui/AnchorLink.jsx'
 import { CONTACT, TRAILS } from '../data/content.js'
@@ -49,32 +49,112 @@ function TrailsDropdown() {
 }
 
 export function Nav() {
+  const [mobileOpen, setMobileOpen] = useState(false)
+  const close = () => setMobileOpen(false)
+
+  useEffect(() => {
+    if (!mobileOpen) return
+    const prev = document.body.style.overflow
+    document.body.style.overflow = 'hidden'
+    return () => { document.body.style.overflow = prev }
+  }, [mobileOpen])
+
   return (
     <nav className="sticky top-0 z-50 bg-white/95 backdrop-blur border-b border-black/5">
       <Container className="h-[72px] flex items-center justify-between">
         <Link href="/" className="brand-mark" aria-label="Wypożyczalnia Rowerów u Bachledy">
           <img src="/logo.png" alt="Logo Wypożyczalnia Rowerów u Bachledy" />
         </Link>
+
         <div className="hidden md:flex items-center gap-10">
           <AnchorLink to="#rowery" className="nav-link">Rowery</AnchorLink>
           <TrailsDropdown />
           <AnchorLink to="#imprezy" className="nav-link">Imprezy</AnchorLink>
           <AnchorLink to="#kontakt" className="nav-link">Kontakt</AnchorLink>
         </div>
-        <a
-          href={CONTACT.phoneTel}
-          className="hidden sm:flex items-center gap-2 text-[12px] tracking-[.18em] uppercase font-medium"
-        >
-          <span className="phone-tick" />
-          <span>{CONTACT.phone}</span>
-        </a>
-        <a
-          href={CONTACT.phoneTel}
-          className="sm:hidden text-[11px] tracking-[.18em] uppercase font-medium"
-        >
-          {CONTACT.phone}
-        </a>
+
+        <div className="flex items-center gap-3">
+          <a
+            href={CONTACT.phoneTel}
+            className="inline-flex items-center gap-2 bg-bachleda-green text-white px-4 py-2.5 sm:px-5 text-[12px] tracking-[.18em] uppercase font-medium hover:opacity-90 transition"
+          >
+            <Phone size={14} strokeWidth={2} />
+            <span className="hidden sm:inline">{CONTACT.phone}</span>
+            <span className="sm:hidden">Zadzwoń</span>
+          </a>
+
+          <button
+            type="button"
+            onClick={() => setMobileOpen(true)}
+            aria-label="Otwórz menu"
+            className="md:hidden w-10 h-10 flex items-center justify-center text-bachleda-charcoal"
+          >
+            <Menu size={22} strokeWidth={1.5} />
+          </button>
+        </div>
       </Container>
+
+      {mobileOpen && (
+        <div className="md:hidden fixed inset-0 z-[60] bg-bachleda-cream flex flex-col">
+          <div className="h-[72px] flex items-center justify-between px-6 border-b border-black/10">
+            <span className="eyebrow-label text-bachleda-charcoal/60">Menu</span>
+            <button
+              type="button"
+              onClick={close}
+              aria-label="Zamknij menu"
+              className="w-10 h-10 flex items-center justify-center text-bachleda-charcoal"
+            >
+              <X size={22} strokeWidth={1.5} />
+            </button>
+          </div>
+
+          <div className="flex-1 overflow-y-auto px-6 py-8">
+            <div className="flex flex-col gap-1">
+              <AnchorLink to="#rowery" onClick={close} className="font-serif-display text-[28px] py-3 border-b border-black/10">
+                Rowery
+              </AnchorLink>
+
+              <div className="py-3 border-b border-black/10">
+                <div className="font-serif-display text-[28px]">Trasy</div>
+                <div className="mt-3 flex flex-col gap-2 pl-1">
+                  {TRAILS.map((trail) => (
+                    <Link
+                      key={trail.slug}
+                      href={`/trasy/${trail.slug}`}
+                      onClick={close}
+                      className="block py-2 text-[14px] text-bachleda-charcoal/80"
+                    >
+                      <span className="font-medium">{trail.title}</span>
+                      <span className="text-[11px] text-bachleda-charcoal/55 ml-2">
+                        {trail.distance} · {trail.time}
+                      </span>
+                    </Link>
+                  ))}
+                </div>
+              </div>
+
+              <AnchorLink to="#imprezy" onClick={close} className="font-serif-display text-[28px] py-3 border-b border-black/10">
+                Imprezy
+              </AnchorLink>
+              <AnchorLink to="#o-nas" onClick={close} className="font-serif-display text-[28px] py-3 border-b border-black/10">
+                O nas
+              </AnchorLink>
+              <AnchorLink to="#kontakt" onClick={close} className="font-serif-display text-[28px] py-3 border-b border-black/10">
+                Kontakt
+              </AnchorLink>
+            </div>
+
+            <a
+              href={CONTACT.phoneTel}
+              onClick={close}
+              className="mt-10 w-full inline-flex items-center justify-center gap-2 bg-bachleda-green text-white px-5 py-4 text-[13px] tracking-[.18em] uppercase font-medium"
+            >
+              <Phone size={16} strokeWidth={2} />
+              {CONTACT.phone}
+            </a>
+          </div>
+        </div>
+      )}
     </nav>
   )
 }

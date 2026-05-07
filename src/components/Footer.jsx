@@ -40,6 +40,19 @@ export function Footer() {
           </div>
           <div>© 2026 Wypożyczalnia Rowerów u Bachledy</div>
         </div>
+
+        <div className="mt-6 pt-6 border-t border-black/10 flex items-center justify-center">
+          <a
+            href="https://www.aisolutions.design/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 text-[11px] tracking-[.18em] uppercase text-bachleda-charcoal/55 hover:text-bachleda-charcoal transition"
+          >
+            <span>Design i wykonanie</span>
+            <img src="/aisd.png" alt="AI Solutions Design" className="h-4 w-auto" />
+            <span className="font-medium">AI Solutions Design</span>
+          </a>
+        </div>
       </div>
     </footer>
   )

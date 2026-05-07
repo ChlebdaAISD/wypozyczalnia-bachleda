@@ -42,20 +42,13 @@ export function Contact() {
               </div>
             </div>
 
-            <div className="mt-8 flex items-center gap-5">
+            <div className="mt-8">
               <a
                 href={CONTACT.facebook}
-                className="text-bachleda-green hover:opacity-80 transition flex items-center gap-2 text-[12px] tracking-[.18em] uppercase font-medium"
+                className="text-bachleda-green hover:opacity-80 transition inline-flex items-center gap-2 text-[12px] tracking-[.18em] uppercase font-medium"
               >
                 <Facebook size={16} strokeWidth={1.5} />
                 Facebook
-              </a>
-              <span className="w-px h-4 bg-black/15" />
-              <a
-                href={CONTACT.website}
-                className="text-bachleda-charcoal/70 hover:text-bachleda-charcoal text-[12px] tracking-[.18em] uppercase font-medium"
-              >
-                rowery.bachleda.biz
               </a>
             </div>
           </div>

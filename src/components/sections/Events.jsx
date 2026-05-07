@@ -13,7 +13,7 @@ export function Events() {
       <div className="section-pad max-w-[1240px] mx-auto px-6 lg:px-10">
         <div className="text-center max-w-[600px] mx-auto fade-up">
           <Eyebrow>Urodziny · Ogniska · Grill</Eyebrow>
-          <h2 className="font-handwritten text-[60px] md:text-[84px] leading-[.95] mt-4">
+          <h2 className="font-serif-display text-[34px] md:text-[42px] leading-[1.1] mt-5">
             Świętuj u Bachledy
           </h2>
           <Divider />
@@ -22,8 +22,8 @@ export function Events() {
           </p>
         </div>
 
-        <div className="mt-16 -mx-6 lg:mx-0 lg:px-0">
-          <div className="flex md:grid md:grid-cols-4 gap-3 md:gap-4 overflow-x-auto md:overflow-visible snap-x snap-mandatory md:snap-none px-6 lg:px-0 pb-4 md:pb-0 scrollbar-hide max-w-[920px] mx-auto">
+        <div className="mt-16 max-w-[920px] mx-auto">
+          <div className="flex md:grid md:grid-cols-4 gap-3 md:gap-4 overflow-x-auto md:overflow-visible snap-x snap-mandatory md:snap-none pb-4 md:pb-0 scrollbar-hide">
             {EVENTS_GRID.map((item, i) => (
               <button
                 key={item.label}

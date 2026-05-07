@@ -13,7 +13,6 @@ export const CONTACT = {
   cityLine: '34-470 Czarny Dunajec',
   hours: 'Codziennie 10:00 — 19:00',
   facebook: 'https://fb.com/roweryubachledy',
-  website: 'https://rowery.bachleda.biz',
   mapsQuery: 'Podczerwone, Czarny Dunajec',
   coords: 'N 49°26′ · E 19°51′',
 }

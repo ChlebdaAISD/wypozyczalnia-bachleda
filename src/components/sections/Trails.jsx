@@ -54,8 +54,8 @@ export function Trails() {
           </SectionHeading>
         </div>
 
-        <div className="mt-14 -mx-6 lg:mx-0 lg:px-0">
-          <div className="flex md:grid md:grid-cols-4 gap-4 lg:gap-5 overflow-x-auto md:overflow-visible snap-x snap-mandatory md:snap-none px-6 lg:px-0 pb-4 md:pb-0 scrollbar-hide">
+        <div className="mt-14">
+          <div className="flex md:grid md:grid-cols-4 gap-4 lg:gap-5 overflow-x-auto md:overflow-visible snap-x snap-mandatory md:snap-none pb-4 md:pb-0 scrollbar-hide">
             {TRAILS.map((trail) => (
               <TrailCard key={trail.title} trail={trail} />
             ))}
