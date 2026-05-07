@@ -60,43 +60,45 @@ export function Nav() {
   }, [mobileOpen])
 
   return (
-    <nav className="sticky top-0 z-50 bg-white/95 backdrop-blur border-b border-black/5">
-      <Container className="h-[72px] flex items-center justify-between">
-        <Link href="/" className="brand-mark" aria-label="Wypożyczalnia Rowerów u Bachledy">
-          <img src="/logo.png" alt="Logo Wypożyczalnia Rowerów u Bachledy" />
-        </Link>
+    <>
+      <nav className="sticky top-0 z-50 bg-white/95 backdrop-blur border-b border-black/5">
+        <Container className="h-[72px] flex items-center justify-between">
+          <Link href="/" className="brand-mark" aria-label="Wypożyczalnia Rowerów u Bachledy">
+            <img src="/logo.png" alt="Logo Wypożyczalnia Rowerów u Bachledy" />
+          </Link>
 
-        <div className="hidden md:flex items-center gap-10">
-          <AnchorLink to="#rowery" className="nav-link">Rowery</AnchorLink>
-          <TrailsDropdown />
-          <AnchorLink to="#imprezy" className="nav-link">Imprezy</AnchorLink>
-          <AnchorLink to="#kontakt" className="nav-link">Kontakt</AnchorLink>
-        </div>
+          <div className="hidden md:flex items-center gap-10">
+            <AnchorLink to="#rowery" className="nav-link">Rowery</AnchorLink>
+            <TrailsDropdown />
+            <AnchorLink to="#imprezy" className="nav-link">Imprezy</AnchorLink>
+            <AnchorLink to="#kontakt" className="nav-link">Kontakt</AnchorLink>
+          </div>
 
-        <div className="flex items-center gap-3">
-          <a
-            href={CONTACT.phoneTel}
-            className="inline-flex items-center gap-2 bg-bachleda-green text-white px-4 py-2.5 sm:px-5 text-[12px] tracking-[.18em] uppercase font-medium hover:opacity-90 transition"
-          >
-            <Phone size={14} strokeWidth={2} />
-            <span className="hidden sm:inline">{CONTACT.phone}</span>
-            <span className="sm:hidden">Zadzwoń</span>
-          </a>
+          <div className="flex items-center gap-3">
+            <a
+              href={CONTACT.phoneTel}
+              className="inline-flex items-center gap-2 bg-bachleda-green text-white px-4 py-2.5 sm:px-5 text-[12px] tracking-[.18em] uppercase font-medium hover:opacity-90 transition"
+            >
+              <Phone size={14} strokeWidth={2} />
+              <span className="hidden sm:inline">{CONTACT.phone}</span>
+              <span className="sm:hidden">Zadzwoń</span>
+            </a>
 
-          <button
-            type="button"
-            onClick={() => setMobileOpen(true)}
-            aria-label="Otwórz menu"
-            className="md:hidden w-10 h-10 flex items-center justify-center text-bachleda-charcoal"
-          >
-            <Menu size={22} strokeWidth={1.5} />
-          </button>
-        </div>
-      </Container>
+            <button
+              type="button"
+              onClick={() => setMobileOpen(true)}
+              aria-label="Otwórz menu"
+              className="md:hidden w-10 h-10 flex items-center justify-center text-bachleda-charcoal"
+            >
+              <Menu size={22} strokeWidth={1.5} />
+            </button>
+          </div>
+        </Container>
+      </nav>
 
       {mobileOpen && (
-        <div className="md:hidden fixed inset-0 z-[60] bg-bachleda-cream flex flex-col">
-          <div className="h-[72px] flex items-center justify-between px-6 border-b border-black/10">
+        <div className="md:hidden fixed inset-0 z-[100] bg-bachleda-cream flex flex-col">
+          <div className="h-[72px] flex items-center justify-between px-6 border-b border-black/10 shrink-0">
             <span className="eyebrow-label text-bachleda-charcoal/60">Menu</span>
             <button
               type="button"
@@ -110,36 +112,33 @@ export function Nav() {
 
           <div className="flex-1 overflow-y-auto px-6 py-8">
             <div className="flex flex-col gap-1">
-              <AnchorLink to="#rowery" onClick={close} className="font-serif-display text-[28px] py-3 border-b border-black/10">
+              <AnchorLink to="#rowery" onClick={close} className="font-serif-display text-[28px] py-3 border-b border-black/10 block">
                 Rowery
               </AnchorLink>
 
               <div className="py-3 border-b border-black/10">
                 <div className="font-serif-display text-[28px]">Trasy</div>
-                <div className="mt-3 flex flex-col gap-2 pl-1">
+                <div className="mt-2 flex flex-col">
                   {TRAILS.map((trail) => (
                     <Link
                       key={trail.slug}
                       href={`/trasy/${trail.slug}`}
                       onClick={close}
-                      className="block py-2 text-[14px] text-bachleda-charcoal/80"
+                      className="block py-2 text-[15px] text-bachleda-charcoal/80"
                     >
-                      <span className="font-medium">{trail.title}</span>
-                      <span className="text-[11px] text-bachleda-charcoal/55 ml-2">
-                        {trail.distance} · {trail.time}
-                      </span>
+                      {trail.title}
                     </Link>
                   ))}
                 </div>
               </div>
 
-              <AnchorLink to="#imprezy" onClick={close} className="font-serif-display text-[28px] py-3 border-b border-black/10">
+              <AnchorLink to="#imprezy" onClick={close} className="font-serif-display text-[28px] py-3 border-b border-black/10 block">
                 Imprezy
               </AnchorLink>
-              <AnchorLink to="#o-nas" onClick={close} className="font-serif-display text-[28px] py-3 border-b border-black/10">
+              <AnchorLink to="#o-nas" onClick={close} className="font-serif-display text-[28px] py-3 border-b border-black/10 block">
                 O nas
               </AnchorLink>
-              <AnchorLink to="#kontakt" onClick={close} className="font-serif-display text-[28px] py-3 border-b border-black/10">
+              <AnchorLink to="#kontakt" onClick={close} className="font-serif-display text-[28px] py-3 border-b border-black/10 block">
                 Kontakt
               </AnchorLink>
             </div>
@@ -155,6 +154,6 @@ export function Nav() {
           </div>
         </div>
       )}
-    </nav>
+    </>
   )
 }

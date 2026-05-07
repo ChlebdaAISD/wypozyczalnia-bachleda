@@ -17,8 +17,8 @@ export function Hero() {
       <Container className="relative h-full flex flex-col justify-center text-white">
         <div className="max-w-[640px] hero-text" id="heroContent">
           <div className="eyebrow-label text-white/85 mb-6">Szlak #1 · Podhale</div>
-          <h1 className="font-handwritten leading-[.95] text-[56px] sm:text-[76px] md:text-[92px] mb-5">
-            Wokół Tatr
+          <h1 className="font-handwritten leading-[.95] text-[44px] sm:text-[64px] md:text-[80px] mb-5">
+            Wypożyczalnia Rowerów Podhale
           </h1>
           <p className="text-white/90 text-[16px] md:text-[18px] leading-[1.7] max-w-[460px] mb-10 font-light">
             Wypożycz rower i ruszaj prosto z Podczerwonego.<br />
