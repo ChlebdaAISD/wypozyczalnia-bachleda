@@ -197,8 +197,8 @@
 
 /* brand mark */
 .brand-mark { display: inline-flex; align-items: center; gap: 10px; }
-.brand-mark img { height: 34px; width: auto; display: block; }
-@media (max-width: 640px) { .brand-mark img { height: 28px; } }
+.brand-mark img { height: 56px; width: auto; display: block; }
+@media (max-width: 640px) { .brand-mark img { height: 48px; } }
 
 /* signature accent */
 .signature-accent {

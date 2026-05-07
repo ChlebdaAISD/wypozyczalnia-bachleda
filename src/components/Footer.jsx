@@ -1,4 +1,5 @@
 import { Facebook, Instagram } from 'lucide-react'
+import { Link } from 'wouter'
 import { Eyebrow } from './ui/Eyebrow.jsx'
 import { AnchorLink } from './ui/AnchorLink.jsx'
 import { CONTACT, FOOTER_LINKS } from '../data/content.js'
@@ -7,6 +8,12 @@ export function Footer() {
   return (
     <footer className="bg-white border-t border-black/15">
       <div className="max-w-[1240px] mx-auto px-6 lg:px-10 py-20">
+        <div className="flex justify-center mb-12">
+          <Link href="/" className="brand-mark" aria-label="Wypożyczalnia Rowerów u Bachledy — strona główna">
+            <img src="/logo.png" alt="Logo Wypożyczalnia Rowerów u Bachledy" className="!h-20" />
+          </Link>
+        </div>
+
         <div className="grid md:grid-cols-2 gap-12 md:gap-20">
           <div>
             <Eyebrow className="mb-5">Dowiedz się więcej</Eyebrow>

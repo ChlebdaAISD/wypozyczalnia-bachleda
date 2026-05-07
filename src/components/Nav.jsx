@@ -99,7 +99,14 @@ export function Nav() {
       {mobileOpen && (
         <div className="md:hidden fixed inset-0 z-[100] bg-bachleda-cream flex flex-col">
           <div className="h-[72px] flex items-center justify-between px-6 border-b border-black/10 shrink-0">
-            <span className="eyebrow-label text-bachleda-charcoal/60">Menu</span>
+            <Link
+              href="/"
+              onClick={close}
+              className="brand-mark"
+              aria-label="Wypożyczalnia Rowerów u Bachledy — strona główna"
+            >
+              <img src="/logo.png" alt="Logo Wypożyczalnia Rowerów u Bachledy" />
+            </Link>
             <button
               type="button"
               onClick={close}
