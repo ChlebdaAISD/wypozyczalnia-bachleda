@@ -22,7 +22,7 @@ export function Pricing() {
         <div className="fade-up">
           <SectionHeading
             eyebrow="Cennik · 2026"
-            intro="Bez ukrytych opłat. Kask zawsze w cenie wypożyczenia. Płatność gotówką lub blikiem na miejscu."
+            intro="Bez ukrytych opłat. Płatność gotówką lub blikiem na miejscu."
           >
             Wszystkie ceny w jednym miejscu
           </SectionHeading>

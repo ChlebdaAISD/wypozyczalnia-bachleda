@@ -30,7 +30,7 @@ export function Trail() {
   const idx = TRAILS.findIndex((t) => t.slug === trail.slug)
   const next = TRAILS[(idx + 1) % TRAILS.length]
   const mapsSrc = `https://www.google.com/maps?q=${encodeURIComponent(
-    trail.mapsQuery + ', ' + CONTACT.mapsQuery
+    trail.mapsQuery
   )}&output=embed&z=12`
 
   return (

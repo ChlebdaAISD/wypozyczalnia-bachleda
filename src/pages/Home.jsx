@@ -19,7 +19,7 @@ export function Home() {
         id="rowery"
         eyebrow="Model #01 · Klasyk, który nie zawodzi"
         title="Rowery klasyczne"
-        description="Idealne na rodzinne pętle wokół Czarnego Dunajca i przez torfowiska. Od 50 zł cały dzień, kask zawsze w cenie. Sprawdzone trzy razy przed każdym wypożyczeniem."
+        description="Idealne na rodzinne pętle wokół Czarnego Dunajca i przez torfowiska. Od 50 zł cały dzień. Sprawdzone trzy razy przed każdym wypożyczeniem."
         hourlyPrice="12 zł / h"
         dailyNote="albo 50 zł / cały dzień"
         placeholderLabel="Rower klasyczny · ujęcie produktowe · cienie"
@@ -32,7 +32,7 @@ export function Home() {
         withTopBorder
         eyebrow="Model #02 · Tatry bez zmęczenia"
         title="Rowery elektryczne"
-        description="Wjedź pod każde podejście bez zadyszki. Najnowsze modele, bateria na cały dzień, miękkie siodło. Idealne, gdy chcesz dotrzeć do Chochołowa albo Witowa i wrócić z uśmiechem."
+        description="Wjedź pod każde podejście bez zadyszki. Dobrej klasy modele, bateria na cały dzień, miękkie siodło. Idealne, gdy chcesz dotrzeć do Chochołowa albo Witowa i wrócić z uśmiechem."
         hourlyPrice="50 zł / h"
         dailyNote="albo 200 zł / cały dzień"
         placeholderLabel="Rower elektryczny · ujęcie produktowe · jasne tło"

@@ -42,9 +42,9 @@ export const TRAILS = [
       {
         name: 'Czarny Dunajec',
         country: 'PL',
-        oneWay: 6,
-        roundTrip: 12,
-        time: '~1 h',
+        oneWay: 4,
+        roundTrip: 8,
+        time: '~30 min',
         desc: 'Drewniany kościół, rynek, kawiarnie. Po drodze most kolejowy nad rzeką.',
       },
       {
@@ -74,9 +74,9 @@ export const TRAILS = [
       {
         name: 'Sucha Hora · granica PL-SK',
         country: 'PL/SK',
-        oneWay: 21,
-        roundTrip: 42,
-        time: '~3 h',
+        oneWay: 4,
+        roundTrip: 8,
+        time: '~30 min',
         desc: 'Dawne przejście graniczne, ostatnia polska wieś na trasie. Stempel pamiątkowy.',
       },
       {
@@ -121,7 +121,7 @@ export const TRAILS = [
     surface: 'Asfalt 3 m szerokości',
     fee: 'Bez opłat',
     placeholderLabel: 'Trasa główna Wokół Tatr · asfaltowa ścieżka · panorama Tatr',
-    mapsQuery: 'Nowy Targ centrum',
+    mapsQuery: 'Rynek Nowy Targ',
     bg: '#b8b9a8',
     bgImage: `linear-gradient(140deg, rgba(31,58,43,.25), transparent 65%),
               radial-gradient(ellipse at 60% 40%, rgba(199,107,74,.18), transparent 60%)`,
@@ -142,13 +142,13 @@ export const TRAILS = [
     surface: 'Asfalt + droga utwardzona',
     fee: 'Wjazd rowerem 11 zł/os.',
     placeholderLabel: 'Dolina Chochołowska · wjazd do TPN · drewniane chaty Witowa',
-    mapsQuery: 'Dolina Chochołowska wjazd, Witów',
+    mapsQuery: 'Polana Chochołowska',
     bg: '#cdc4ad',
     bgImage: `linear-gradient(160deg, rgba(160,120,80,.3), transparent 60%),
               linear-gradient(90deg, rgba(0,0,0,.04) 0 1px, transparent 1px 14px)`,
     long: [
       'Trasa do najdłuższej doliny Tatr Zachodnich — 8 km przepiękną doliną od bramy w Witowie do Polany Chochołowskiej z legendarnym schroniskiem PTTK. Wjazd dla rowerów jest legalny tylko do schroniska, dalej tylko piechotą.',
-      'Z Podczerwonego ruszasz przez Czarny Dunajec, dalej do Witowa — wsi pełnej drewnianej zabudowy góralskiej. Tu, przy bramie wjazdowej do Tatrzańskiego Parku Narodowego, kupujesz bilet rowerowy (11 zł/os.). Następnie 8 km w górę doliną — pierwsza połowa po asfalcie, druga po szutrowej drodze utwardzonej. Trasa pnie się stopniowo, ale bez ekstremalnych podejść.',
+      'Z Podczerwonego ruszasz przez Koniówkę, Chochołów — wieś pełną drewnianej zabudowy góralskiej — a następnie Witów. Przy bramie wjazdowej do Tatrzańskiego Parku Narodowego kupujesz bilet rowerowy (11 zł/os.). Następnie 8 km w górę doliną — pierwsza połowa po asfalcie, druga po szutrowej drodze utwardzonej. Trasa pnie się stopniowo, ale bez ekstremalnych podejść.',
       'W Polanie Chochołowskiej można zjeść w schronisku tradycyjną kwaśnicę albo żurek, odpocząć na łące i wracać tą samą drogą. Wiosną (kwiecień–maj) dolina słynie z dywanów krokusów. Na rower elektryczny? Idealny wybór, choć klasykiem też się da — pod warunkiem dobrej kondycji.',
     ],
   },
@@ -219,7 +219,7 @@ export const INSPIRATION = [
   {
     eyebrow: 'Punkt widokowy',
     title: 'Brzegi w Podczerwonem',
-    meta: '~3 km od wypożyczalni',
+    meta: '~300 m od wypożyczalni',
     label: 'Brzegi w Podczerwonem · panorama Tatr · łąki',
     bg: '#aab59a',
     bgImage: `linear-gradient(160deg, rgba(60,80,50,.28), transparent 60%),
@@ -228,7 +228,7 @@ export const INSPIRATION = [
   {
     eyebrow: 'Natura',
     title: 'Torfowiska Podczerwone i Koniówka',
-    meta: '~4 km od wypożyczalni',
+    meta: '~2 km od wypożyczalni',
     label: 'Torfowiska · trzciny · drewniana kładka',
     bg: '#88947a',
     bgImage: `linear-gradient(180deg, rgba(70,90,60,.25), transparent 55%),
@@ -237,7 +237,7 @@ export const INSPIRATION = [
   {
     eyebrow: 'Miasto',
     title: 'Czarny Dunajec',
-    meta: '~6 km od wypożyczalni',
+    meta: '~4 km od wypożyczalni',
     label: 'Czarny Dunajec · rynek · drewniany kościół',
     bg: '#a89372',
     bgImage: `linear-gradient(170deg, rgba(120,80,40,.3), transparent 50%),
@@ -255,7 +255,7 @@ export const INSPIRATION = [
   {
     eyebrow: 'Zabytek + Natura',
     title: 'Zakład torfowy z zabytkowym wagonikiem',
-    meta: '~10 km od wypożyczalni',
+    meta: '~2 km od wypożyczalni',
     label: 'Zakład torfowy · zabytkowy wagonik kolejowy',
     bg: '#bdb094',
     bgImage: `linear-gradient(160deg, rgba(140,100,60,.28), transparent 55%),
@@ -264,7 +264,7 @@ export const INSPIRATION = [
   {
     eyebrow: 'Granica PL-SK',
     title: 'Granica polsko-słowacka',
-    meta: '~21 km od wypożyczalni',
+    meta: '~4 km od wypożyczalni',
     label: 'Granica PL-SK · most graniczny · znaki',
     bg: '#b8b9a8',
     bgImage: `linear-gradient(140deg, rgba(31,58,43,.25), transparent 65%),

@@ -15,7 +15,7 @@ export function Contact() {
             </h2>
             <Divider align="left" />
             <p className="text-[15px] leading-[1.75] text-bachleda-charcoal/70">
-              Jesteśmy bezpośrednio przy Szlaku Wokół Tatr, tuż obok zabytkowego mostu kolejowego nad Czarnym Dunajcem. Z parkingu wsiadasz na rower i ruszasz — bez obwożenia, bez tracenia czasu.
+              Jesteśmy bezpośrednio przy Szlaku Wokół Tatr, tuż obok zabytkowej stacji kolejowej i mostu kolejowego nad Czarnym Dunajcem. Z parkingu wsiadasz na rower i ruszasz — bez obwożenia, bez tracenia czasu.
             </p>
 
             <div className="mt-10 grid grid-cols-2 gap-y-6 gap-x-8 text-[14px]">

@@ -13,11 +13,15 @@ export function About() {
           <Divider />
 
           <p className="text-[15px] leading-[1.75] text-bachleda-charcoal/80">
-            Oferujemy rowery dobrej klasy, parking i punkt gastronomiczny. Jesteśmy zlokalizowani na granicy Podczerwonego i Czarnego Dunajca, tuż obok malowniczej ścieżki rowerowej — Szlaku Wokół Tatr, przebiegającego przez polskie i słowackie miejscowości.
+            Wypożyczalnia Rowerów u Bachledy leży u podnóża Tatr w malowniczej miejscowości Podczerwone, w Kotlinie Orawsko-Nowotarskiej. Oferujemy rowery dobrej klasy, parking i punkt gastronomiczny. Jesteśmy bezpośrednio przy Szlaku Wokół Tatr — ścieżce rowerowej prowadzącej przez polskie i słowackie miejscowości — obok zabytkowej stacji kolejowej w Podczerwonem.
           </p>
 
           <p className="mt-5 text-[15px] leading-[1.75] text-bachleda-charcoal/80">
-            U nas możesz zostawić samochód, wypożyczyć rower i aktywnie spędzić czas, podziwiając przyrodę, torfowiska, lasy oraz panoramę Tatr, Gorców i Babiej Góry.
+            Podczerwone to znakomita baza wypadowa do wycieczek rowerowych po Podhalu i na Słowację. U nas zostawisz samochód, wypożyczysz rower i aktywnie spędzisz czas, podziwiając przyrodę, torfowiska, lasy oraz panoramę Tatr, Gorców i Babiej Góry.
+          </p>
+
+          <p className="mt-5 text-[15px] leading-[1.75] text-bachleda-charcoal/80">
+            W naszym punkcie gastronomicznym smacznie zjesz regionalnych przysmaków — kaszankę, swojską kiełbasę, oscypka z żurawiną — albo napijesz się dobrej kawy w towarzystwie pysznej szarlotki czy sernika.
           </p>
 
           <p className="mt-5 text-[15px] leading-[1.75] text-bachleda-charcoal/80">
@@ -25,7 +29,7 @@ export function About() {
           </p>
 
           <div className="mt-8 signature-accent text-bachleda-charcoal/70">
-            Kask zawsze gratis ✦ parking dla wypożyczających
+            Parking dla wypożyczających ✦ zostaw auto, ruszaj rowerem
           </div>
         </div>
       </div>

@@ -15,7 +15,7 @@ function TrailCard({ trail }) {
           <div className="eyebrow-label text-bachleda-charcoal/70 text-[10px]">{trail.eyebrow}</div>
           <Mountain size={14} strokeWidth={1.5} className="text-bachleda-charcoal/40" />
         </div>
-        <h3 className="font-serif-display text-[20px] leading-[1.2] min-h-[48px]">{trail.title}</h3>
+        <h3 className="font-serif-display text-[20px] leading-[1.2] min-h-[48px] break-words hyphens-auto" lang="pl">{trail.title}</h3>
         {trail.short && (
           <p className="mt-3 text-[12px] leading-[1.55] text-bachleda-charcoal/65 line-clamp-2">
             {trail.short}

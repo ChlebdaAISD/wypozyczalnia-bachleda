@@ -22,7 +22,7 @@ export function Hero() {
           </h1>
           <p className="text-white/90 text-[16px] md:text-[18px] leading-[1.7] max-w-[460px] mb-10 font-light">
             Wypożycz rower i ruszaj prosto z Podczerwonego.<br />
-            250 km tras przez dwa kraje, kask zawsze w cenie.
+            250 km tras przez dwa kraje.
           </p>
           <div className="flex flex-wrap gap-4 items-center">
             <a href={CONTACT.phoneTel} className="btn-primary">
@@ -31,7 +31,6 @@ export function Hero() {
             </a>
             <span className="signature-accent ml-2 hidden md:inline">otwarte 10–19</span>
           </div>
-          <div className="signature-accent mt-4 text-white/85">Kask zawsze gratis ✦</div>
         </div>
       </Container>
 
