@@ -36,7 +36,6 @@ const trailRoutes = Object.fromEntries(
       canonical: `${DOMAIN}/trasy/${t.slug}/`,
       breadcrumb: [
         { name: 'Wypożyczalnia u Bachledy', url: `${DOMAIN}/` },
-        { name: 'Trasy', url: `${DOMAIN}/#trasy` },
         { name: t.title, url: `${DOMAIN}/trasy/${t.slug}/` },
       ],
       additionalSchema: {
