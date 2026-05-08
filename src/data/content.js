@@ -279,7 +279,7 @@ export const INSPIRATION = [
 ]
 
 export const FOOTER_LINKS = [
-  { href: '#rowery', label: 'Cennik' },
+  { href: '#cennik', label: 'Cennik' },
   { href: '#trasy', label: 'Trasy' },
   { href: '#imprezy', label: 'Imprezy' },
   { href: '#kontakt', label: 'Kontakt' },

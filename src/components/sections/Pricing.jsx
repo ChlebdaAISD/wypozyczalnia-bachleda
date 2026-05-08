@@ -17,7 +17,7 @@ function PricingExtra({ extra }) {
 
 export function Pricing() {
   return (
-    <section className="bg-white">
+    <section id="cennik" className="bg-white">
       <div className="section-pad max-w-[860px] mx-auto px-6">
         <div className="fade-up">
           <SectionHeading

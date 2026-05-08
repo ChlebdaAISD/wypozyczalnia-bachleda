@@ -25,6 +25,7 @@
     -webkit-font-smoothing: antialiased;
     text-rendering: optimizeLegibility;
   }
+  section[id] { scroll-margin-top: 72px; }
 }
 
 @layer utilities {
