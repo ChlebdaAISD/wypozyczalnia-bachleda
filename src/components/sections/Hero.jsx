@@ -26,7 +26,7 @@ export function Hero() {
           </p>
           <div className="flex flex-wrap gap-4 items-center">
             <a href={CONTACT.phoneTel} className="btn-primary">
-              Rezerwuj
+              Zadzwoń
               <ArrowRight size={14} strokeWidth={2} />
             </a>
             <span className="signature-accent ml-2 hidden md:inline">otwarte 10–19</span>

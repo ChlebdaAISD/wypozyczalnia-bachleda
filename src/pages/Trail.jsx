@@ -92,7 +92,7 @@ export function Trail() {
                 ))}
               </div>
               <a href={CONTACT.phoneTel} className="btn-primary mt-10">
-                Rezerwuj rower
+                Zadzwoń
                 <ArrowRight size={14} strokeWidth={2} />
               </a>
             </div>

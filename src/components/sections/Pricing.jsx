@@ -51,7 +51,7 @@ export function Pricing() {
 
         <div className="mt-16 text-center">
           <a href={CONTACT.phoneTel} className="btn-primary">
-            Zadzwoń aby zarezerwować
+            Zadzwoń
             <ArrowRight size={14} strokeWidth={2} />
           </a>
         </div>

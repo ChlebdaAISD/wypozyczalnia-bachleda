@@ -77,7 +77,7 @@ export function Nav() {
           <div className="flex items-center gap-3">
             <a
               href={CONTACT.phoneTel}
-              className="inline-flex items-center gap-2 bg-bachleda-green text-white px-4 py-2.5 sm:px-5 text-[12px] tracking-[.18em] uppercase font-medium hover:opacity-90 transition"
+              className="inline-flex items-center gap-2 bg-bachleda-terracotta hover:bg-bachleda-terracotta-dark text-white px-4 py-2.5 sm:px-5 text-[12px] tracking-[.18em] uppercase font-medium transition"
             >
               <Phone size={14} strokeWidth={2} />
               <span className="hidden sm:inline">{CONTACT.phone}</span>
@@ -153,7 +153,7 @@ export function Nav() {
             <a
               href={CONTACT.phoneTel}
               onClick={close}
-              className="mt-10 w-full inline-flex items-center justify-center gap-2 bg-bachleda-green text-white px-5 py-4 text-[13px] tracking-[.18em] uppercase font-medium"
+              className="mt-10 w-full inline-flex items-center justify-center gap-2 bg-bachleda-terracotta hover:bg-bachleda-terracotta-dark transition text-white px-5 py-4 text-[13px] tracking-[.18em] uppercase font-medium"
             >
               <Phone size={16} strokeWidth={2} />
               {CONTACT.phone}
