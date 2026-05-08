@@ -2,12 +2,12 @@ import { SectionHeading } from '../ui/SectionHeading.jsx'
 
 export const FAQ_ITEMS = [
   {
-    q: 'Ile kosztuje wypożyczenie roweru w Podhalu?',
+    q: 'Ile kosztuje wypożyczenie roweru na Podhalu?',
     a: 'Rower klasyczny (treking): 12 zł za godzinę albo 50 zł za cały dzień. Rower elektryczny (e-bike): 50 zł za godzinę albo 200 zł za cały dzień. Riksza rodzinna na trzy osoby: 12 zł za godzinę albo 60 zł za cały dzień. Kask gratis. Płatność gotówką lub blikiem na miejscu.',
   },
   {
     q: 'Czy potrzebna jest rezerwacja?',
-    a: 'W weekendy i ferie polecamy telefon dzień wcześniej (697 274 778) — w sezonie elektryki schodzą szybko. W tygodniu zwykle są wolne rowery od ręki. W razie deszczu rezerwacja przesuwa się bez opłat.',
+    a: 'Nie, nie rezerwujemy rowerów z wyprzedzeniem.',
   },
   {
     q: 'Czy kask jest w cenie?',
@@ -44,7 +44,7 @@ export function FAQ() {
             eyebrow="Najczęstsze pytania"
             intro="Zanim Pan/Pani zadzwoni — najpierw to, o co pyta nas większość gości."
           >
-            Najczęstsze pytania o wypożyczalnię rowerów w Podhalu
+            Najczęstsze pytania o wypożyczalnię rowerów na Podhalu
           </SectionHeading>
         </div>
 

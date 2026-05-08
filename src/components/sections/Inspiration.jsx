@@ -28,7 +28,7 @@ export function Inspiration() {
         <div className="text-center fade-up">
           <Eyebrow>Atrakcje w okolicy</Eyebrow>
           <h2 className="font-serif-display text-[34px] sm:text-[42px] md:text-[48px] leading-[1.05] mt-4 max-w-[640px] mx-auto">
-            Co odwiedzić rowerem z Podczerwonego?
+            Gdzie pojechać rowerem, ruszając z Podczerwonego?
           </h2>
           <Divider />
         </div>

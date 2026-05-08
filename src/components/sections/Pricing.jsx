@@ -24,7 +24,7 @@ export function Pricing() {
             eyebrow="Cennik · 2026"
             intro="Wypożyczalnia rowerów Podhale — bez ukrytych opłat. Płatność gotówką lub blikiem na miejscu. Kask zawsze w cenie."
           >
-            Ile kosztuje wypożyczenie roweru w Podhalu?
+            Ile kosztuje wypożyczenie roweru na Podhalu?
           </SectionHeading>
         </div>
 

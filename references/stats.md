@@ -60,7 +60,7 @@ Format: zawsze konkretnie. "od XXX PLN" / "XXX PLN flat". Nigdy "atrakcyjne ceny
 - **Google Maps Place ID (ChIJ):** ChIJ16OSW6jpFUcRRYrwENfF1iQ
 - **Google Maps CID:** 2654526557874326085
 - **Google Maps Place ID (hex):** 0x4715e9a85b92a3d7:0x24d6c5d710f08a45
-- **Godziny otwarcia:** codziennie 10:00 — 19:00 (na stronie); Google pokazuje 10:00 — 18:00 — TODO: zweryfikować z Elą która wersja jest aktualna
+- **Godziny otwarcia:** codziennie 10:00 — 19:00 (decyzja 2026-05-08: zostaje 10-19, Google Business Profile do aktualizacji w `/local-seo-optimizer`)
 - **Telefon główny:** 697 274 778
 - **Email:** ela.bachleda.tyrala@o2.pl
 - **Strona:** https://www.rowerybachleda.pl/
