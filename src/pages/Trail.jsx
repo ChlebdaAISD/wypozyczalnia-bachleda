@@ -91,6 +91,48 @@ export function Trail() {
                   <p key={i}>{para}</p>
                 ))}
               </div>
+
+              <div className="mt-10 pt-8 border-t border-black/10">
+                <div className="eyebrow-label text-bachleda-charcoal/60 mb-3">Więcej informacji</div>
+                <ul className="text-[13px] leading-[1.8] text-bachleda-charcoal/75 space-y-2">
+                  <li>
+                    Oficjalna strona szlaku:{' '}
+                    <a
+                      href="https://szlakwokoltatr.eu/"
+                      target="_blank"
+                      rel="noopener"
+                      className="underline hover:text-bachleda-green"
+                    >
+                      szlakwokoltatr.eu
+                    </a>
+                  </li>
+                  {trail.fee && trail.fee !== '—' && trail.fee !== 'brak' && (
+                    <li>
+                      Tatrzański Park Narodowy (opłaty, regulamin):{' '}
+                      <a
+                        href="https://tpn.pl/"
+                        target="_blank"
+                        rel="noopener"
+                        className="underline hover:text-bachleda-green"
+                      >
+                        tpn.pl
+                      </a>
+                    </li>
+                  )}
+                  <li>
+                    Urząd Gminy Czarny Dunajec:{' '}
+                    <a
+                      href="https://www.czarny-dunajec.pl/"
+                      target="_blank"
+                      rel="noopener"
+                      className="underline hover:text-bachleda-green"
+                    >
+                      czarny-dunajec.pl
+                    </a>
+                  </li>
+                </ul>
+              </div>
+
               <a href={CONTACT.phoneTel} className="btn-primary mt-10">
                 Zadzwoń
                 <ArrowRight size={14} strokeWidth={2} />
@@ -176,10 +218,10 @@ export function Trail() {
               {next.short}
             </p>
             <Link
-              href={`/trasy/${next.slug}`}
+              href={`/trasy/${next.slug}/`}
               className="inline-flex items-center gap-2 mt-8 text-[12px] tracking-[.2em] uppercase font-medium text-bachleda-charcoal hover:text-bachleda-green"
             >
-              Zobacz trasę
+              {next.title}
               <ArrowRight size={14} strokeWidth={2} />
             </Link>
           </div>

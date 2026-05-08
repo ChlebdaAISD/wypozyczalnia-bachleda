@@ -22,9 +22,9 @@ export function Pricing() {
         <div className="fade-up">
           <SectionHeading
             eyebrow="Cennik · 2026"
-            intro="Bez ukrytych opłat. Płatność gotówką lub blikiem na miejscu."
+            intro="Wypożyczalnia rowerów Podhale — bez ukrytych opłat. Płatność gotówką lub blikiem na miejscu. Kask zawsze w cenie."
           >
-            Wszystkie ceny w jednym miejscu
+            Ile kosztuje wypożyczenie roweru w Podhalu?
           </SectionHeading>
         </div>
 

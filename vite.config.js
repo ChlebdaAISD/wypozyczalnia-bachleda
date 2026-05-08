@@ -4,5 +4,20 @@ import tailwindcss from '@tailwindcss/vite'
 
 export default defineConfig({
   plugins: [react(), tailwindcss()],
-  server: { port: 3001, host: true }
+  server: { port: 3001, host: true },
+  build: {
+    outDir: 'dist/public',
+    rollupOptions: {
+      output: {
+        manualChunks(id) {
+          if (id.includes('node_modules/react') || id.includes('node_modules/react-dom')) {
+            return 'vendor-react'
+          }
+          if (id.includes('node_modules/gsap')) {
+            return 'vendor-gsap'
+          }
+        },
+      },
+    },
+  },
 })

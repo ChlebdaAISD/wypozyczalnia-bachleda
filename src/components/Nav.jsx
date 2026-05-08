@@ -30,7 +30,7 @@ function TrailsDropdown() {
             {TRAILS.map((trail) => (
               <Link
                 key={trail.slug}
-                href={`/trasy/${trail.slug}`}
+                href={`/trasy/${trail.slug}/`}
                 onClick={close}
                 className="block px-5 py-3 text-[13px] hover:bg-bachleda-cream"
               >
@@ -129,7 +129,7 @@ export function Nav() {
                   {TRAILS.map((trail) => (
                     <Link
                       key={trail.slug}
-                      href={`/trasy/${trail.slug}`}
+                      href={`/trasy/${trail.slug}/`}
                       onClick={close}
                       className="block py-2 text-[15px] text-bachleda-charcoal/80"
                     >

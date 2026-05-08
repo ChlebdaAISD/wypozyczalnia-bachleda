@@ -6,7 +6,7 @@ import { TRAILS } from '../../data/content.js'
 function TrailCard({ trail }) {
   return (
     <Link
-      href={`/trasy/${trail.slug}`}
+      href={`/trasy/${trail.slug}/`}
       className="trail-card lift-on-hover fade-up bg-white block group snap-start shrink-0 w-[78%] sm:w-[55%] md:w-auto"
     >
       <div className="h-1.5" style={{ background: trail.bg }} />
@@ -32,7 +32,7 @@ function TrailCard({ trail }) {
           </div>
         </div>
         <div className="mt-5 inline-flex items-center gap-2 text-[11px] tracking-[.2em] uppercase font-medium text-bachleda-green group-hover:gap-3 transition-all">
-          Zobacz trasę
+          {trail.title}
           <ArrowRight size={12} strokeWidth={2} />
         </div>
       </div>
@@ -46,11 +46,11 @@ export function Trails() {
       <div className="section-pad max-w-[1240px] mx-auto px-6 lg:px-10">
         <div className="fade-up">
           <SectionHeading
-            eyebrow="Szlak #1 w Polsce"
+            eyebrow="Szlak Wokół Tatr · 250 km"
             light
-            intro="Szlak Wokół Tatr opasuje całe pasmo — z Polski do Słowacji i z powrotem. Asfaltowe ścieżki, pełna infrastruktura, panorama Tatr przez 70% trasy. Wsiadasz prosto z naszego parkingu, bez przepakowywania."
+            intro="Szlak Wokół Tatr opasuje całe pasmo — z Polski do Słowacji i z powrotem. Asfaltowe ścieżki, pełna infrastruktura, panorama Tatr przez 70% trasy. Jesteśmy wypożyczalnią rowerów dosłownie na trasie — wsiadasz na naszym parkingu, bez przepakowywania."
           >
-            250 km przygody przez dwa kraje
+            Szlak Wokół Tatr — 250 km przez dwa kraje
           </SectionHeading>
         </div>
 

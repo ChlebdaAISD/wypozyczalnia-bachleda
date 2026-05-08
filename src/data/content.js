@@ -8,13 +8,14 @@ export const NAV_LINKS = [
 export const CONTACT = {
   phone: '697 274 778',
   phoneTel: 'tel:697274778',
-  email: '',
+  email: 'ela.bachleda.tyrala@o2.pl',
   street: 'Podczerwone',
   cityLine: '34-470 Czarny Dunajec',
   hours: 'Codziennie 10:00 — 19:00',
   facebook: 'https://fb.com/roweryubachledy',
-  mapsQuery: 'Podczerwone, Czarny Dunajec',
-  coords: 'N 49°26′ · E 19°51′',
+  mapsQuery: 'Wypożyczalnia Rowerów u Bachledy, Podczerwone',
+  mapsEmbed: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11599.315094921181!2d19.813920374727324!3d49.412186011866694!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4715e9a85b92a3d7%3A0x24d6c5d710f08a45!2sWypo%C5%BCyczalnia%20Rower%C3%B3w%20u%20Bachledy!5e0!3m2!1spl!2spl!4v1778264105963!5m2!1spl!2spl',
+  coords: 'N 49°24′54″ · E 19°50′11″',
 }
 
 export const TRAILS = [
@@ -178,21 +179,26 @@ export const PRICING_EXTRAS = [
   },
 ]
 
+// TODO: zastąpić /logo.png prawdziwymi zdjęciami wydarzeń (ognisko, dmuchaniec, grill, grupa)
 export const EVENTS_GRID = [
   {
     label: 'Ognisko · zmierzch',
+    alt: 'Ognisko o zmierzchu na terenie wypożyczalni rowerów u Bachledy w Podczerwonem',
     image: '/logo.png',
   },
   {
     label: 'Dzieci · dmuchaniec',
+    alt: 'Dmuchany zamek dla dzieci — wypożyczalnia u Bachledy organizuje urodziny',
     image: '/logo.png',
   },
   {
     label: 'Grill · kiełbaski',
+    alt: 'Grill z kiełbaskami od miejscowego masarza — imprezy okolicznościowe u Bachledy',
     image: '/logo.png',
   },
   {
     label: 'Grupa · zachód słońca',
+    alt: 'Grupa rowerzystów o zachodzie słońca przy wypożyczalni rowerów Podczerwone',
     image: '/logo.png',
   },
 ]

@@ -11,18 +11,18 @@ export function Contact() {
           <div className="max-w-[440px] fade-up">
             <Eyebrow>Odwiedź nas</Eyebrow>
             <h2 className="font-serif-display text-[34px] md:text-[42px] leading-[1.1] mt-5">
-              Podczerwone, obok mostu
+              Wypożyczalnia rowerów Podczerwone — przy Szlaku Wokół Tatr
             </h2>
             <Divider align="left" />
             <p className="text-[15px] leading-[1.75] text-bachleda-charcoal/70">
-              Jesteśmy bezpośrednio przy Szlaku Wokół Tatr, tuż obok zabytkowej stacji kolejowej i mostu kolejowego nad Czarnym Dunajcem. Z parkingu wsiadasz na rower i ruszasz — bez obwożenia, bez tracenia czasu.
+              Jesteśmy w Podczerwonem (gmina Czarny Dunajec), bezpośrednio przy Szlaku Wokół Tatr — obok zabytkowej stacji kolejowej i mostu kolejowego nad rzeką Czarny Dunajec. Z naszego parkingu wsiada Pan/Pani na rower i rusza prosto na trasę.
             </p>
 
             <div className="mt-10 grid grid-cols-2 gap-y-6 gap-x-8 text-[14px]">
               <div>
                 <Eyebrow tone="faint" className="mb-2">Adres</Eyebrow>
                 <div>
-                  Podczerwone<br />
+                  {CONTACT.street}<br />
                   obok mostu kolejowego<br />
                   {CONTACT.cityLine}
                 </div>
@@ -56,8 +56,8 @@ export function Contact() {
 
         <div className="relative min-h-[480px] lg:min-h-full overflow-hidden">
           <iframe
-            title={`Mapa — ${CONTACT.mapsQuery}`}
-            src={`https://www.google.com/maps?q=${encodeURIComponent(CONTACT.mapsQuery)}&output=embed&z=13`}
+            title="Mapa — Wypożyczalnia Rowerów u Bachledy, Podczerwone 71A"
+            src={CONTACT.mapsEmbed}
             className="absolute inset-0 w-full h-full"
             style={{ border: 0 }}
             loading="lazy"

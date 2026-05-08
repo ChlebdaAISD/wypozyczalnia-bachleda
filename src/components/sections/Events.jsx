@@ -34,7 +34,7 @@ export function Events() {
               >
                 <img
                   src={item.image}
-                  alt={item.label}
+                  alt={item.alt || item.label}
                   loading="lazy"
                   className="max-w-[60%] max-h-[60%] object-contain opacity-90"
                 />
@@ -51,7 +51,7 @@ export function Events() {
             Zadzwoń — {CONTACT.phone}
             <Phone size={14} strokeWidth={2} />
           </a>
-          <div className="mt-5 signature-accent">na grilla zapraszamy każdy weekend</div>
+          <div className="mt-5 signature-accent">na grilla zapraszamy w każdy weekend</div>
         </div>
       </div>
 

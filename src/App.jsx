@@ -9,21 +9,24 @@ import { useReveal } from './lib/useReveal.js'
 function ScrollToTop() {
   const [location] = useLocation()
   useEffect(() => {
-    window.scrollTo({ top: 0, left: 0, behavior: 'instant' })
+    if (typeof window !== 'undefined') {
+      window.scrollTo({ top: 0, left: 0, behavior: 'instant' })
+    }
   }, [location])
   return null
 }
 
-export default function App() {
+export default function App({ ssrPath }) {
   useReveal()
 
   return (
-    <Router>
+    <Router ssrPath={ssrPath}>
       <ScrollToTop />
       <Nav />
       <Switch>
         <Route path="/" component={Home} />
         <Route path="/trasy/:slug" component={Trail} />
+        <Route path="/trasy/:slug/" component={Trail} />
         <Route component={Home} />
       </Switch>
       <Footer />
