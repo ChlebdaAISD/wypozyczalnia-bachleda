@@ -58,7 +58,7 @@ const trailRoutes = Object.fromEntries(
           availability: 'https://schema.org/InStock',
         },
         provider: {
-          '@type': 'LocalBusiness',
+          '@type': 'Organization',
           name: 'Wypożyczalnia Rowerów u Bachledy',
           url: `${DOMAIN}/`,
         },

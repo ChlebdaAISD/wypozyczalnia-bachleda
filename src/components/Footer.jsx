@@ -11,7 +11,7 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12 md:gap-16">
           <div>
             <Link href="/" className="inline-block" aria-label="Wypożyczalnia Rowerów u Bachledy — strona główna">
-              <img src="/logo.webp" alt="Logo Wypożyczalnia Rowerów u Bachledy" width={600} height={316} loading="lazy" className="h-20 w-auto" />
+              <img src="/logo-nav.webp" alt="Logo Wypożyczalnia Rowerów u Bachledy" width={280} height={147} loading="lazy" className="h-20 w-auto" />
             </Link>
             <h3 className="font-serif-display text-[20px] leading-[1.25] mt-5">
               Wypożyczalnia Rowerów u Bachledy
