@@ -9,8 +9,8 @@
     "build:client": "vite build",
     "build:ssr": "vite build --config vite.config.ssr.js",
     "build:prerender": "node scripts/prerender.js",
-    "preview": "npm run build:client && wrangler dev",
-    "deploy": "npm run build:client && wrangler deploy"
+    "preview": "npm run build && wrangler dev",
+    "deploy": "npm run build && wrangler deploy"
   },
   "engines": {
     "node": ">=22"
