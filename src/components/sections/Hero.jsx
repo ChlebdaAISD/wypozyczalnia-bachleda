@@ -11,7 +11,7 @@ export function Hero() {
           alt="Panorama Tatr ze Szlaku Wokół Tatr — wypożyczalnia rowerów u Bachledy w Podczerwonem"
           width={1920}
           height={1280}
-          fetchpriority="high"
+          fetchPriority="high"
           decoding="async"
           className="absolute inset-0 w-full h-full object-cover"
         />
