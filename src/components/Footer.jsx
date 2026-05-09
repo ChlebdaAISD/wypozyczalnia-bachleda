@@ -11,7 +11,7 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12 md:gap-16">
           <div>
             <Link href="/" className="inline-block" aria-label="Wypożyczalnia Rowerów u Bachledy — strona główna">
-              <img src="/logo.png" alt="Logo Wypożyczalnia Rowerów u Bachledy" className="h-20 w-auto" />
+              <img src="/logo.webp" alt="Logo Wypożyczalnia Rowerów u Bachledy" width={600} height={316} loading="lazy" className="h-20 w-auto" />
             </Link>
             <h3 className="font-serif-display text-[20px] leading-[1.25] mt-5">
               Wypożyczalnia Rowerów u Bachledy
@@ -57,10 +57,10 @@ export function Footer() {
             href="https://www.aisolutions.design/"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 text-[11px] tracking-[.18em] uppercase text-bachleda-charcoal/55 hover:text-bachleda-charcoal transition"
+            className="inline-flex items-center gap-2 text-[11px] tracking-[.18em] uppercase text-bachleda-charcoal/70 hover:text-bachleda-charcoal transition"
           >
             <span>Design i wykonanie</span>
-            <img src="/aisd.png" alt="AI Solutions Design" className="h-4 w-auto" />
+            <img src="/aisd.png" alt="AI Solutions Design" width={352} height={360} loading="lazy" className="h-4 w-auto" />
             <span className="font-medium">AI Solutions Design</span>
           </a>
         </div>

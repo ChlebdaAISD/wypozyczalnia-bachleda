@@ -35,13 +35,15 @@ export function Events() {
                 <img
                   src={item.image}
                   alt={item.alt || item.label}
+                  width={600}
+                  height={316}
                   loading="lazy"
                   className="max-w-[60%] max-h-[60%] object-contain opacity-90"
                 />
               </button>
             ))}
           </div>
-          <div className="md:hidden text-center mt-2 text-[10px] tracking-[.25em] uppercase text-bachleda-charcoal/45">
+          <div className="md:hidden text-center mt-2 text-[10px] tracking-[.25em] uppercase text-bachleda-charcoal/70">
             ← przesuń →
           </div>
         </div>

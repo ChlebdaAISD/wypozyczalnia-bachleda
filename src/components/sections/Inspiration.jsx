@@ -39,7 +39,7 @@ export function Inspiration() {
               <InspirationCard key={item.title} item={item} />
             ))}
           </div>
-          <div className="md:hidden text-center mt-3 text-[10px] tracking-[.25em] uppercase text-bachleda-charcoal/45">
+          <div className="md:hidden text-center mt-3 text-[10px] tracking-[.25em] uppercase text-bachleda-charcoal/70">
             ← przesuń →
           </div>
         </div>

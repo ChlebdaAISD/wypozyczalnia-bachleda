@@ -64,7 +64,7 @@ export function Nav() {
       <nav className="sticky top-0 z-50 bg-white/95 backdrop-blur border-b border-black/5">
         <Container className="h-[72px] flex items-center justify-between">
           <Link href="/" className="brand-mark" aria-label="Wypożyczalnia Rowerów u Bachledy">
-            <img src="/logo.png" alt="Logo Wypożyczalnia Rowerów u Bachledy" />
+            <img src="/logo.webp" alt="Logo Wypożyczalnia Rowerów u Bachledy" width={600} height={316} />
           </Link>
 
           <div className="hidden md:flex items-center gap-10">
@@ -105,7 +105,7 @@ export function Nav() {
               className="brand-mark"
               aria-label="Wypożyczalnia Rowerów u Bachledy — strona główna"
             >
-              <img src="/logo.png" alt="Logo Wypożyczalnia Rowerów u Bachledy" />
+              <img src="/logo.webp" alt="Logo Wypożyczalnia Rowerów u Bachledy" width={600} height={316} />
             </Link>
             <button
               type="button"

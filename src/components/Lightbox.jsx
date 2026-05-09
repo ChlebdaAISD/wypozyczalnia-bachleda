@@ -74,6 +74,7 @@ export function Lightbox({ images, openIndex, onClose, onNavigate }) {
         <img
           src={current.image}
           alt={current.label || ''}
+          loading="lazy"
           className="max-w-full max-h-[80vh] object-contain"
         />
         {current.label && (
