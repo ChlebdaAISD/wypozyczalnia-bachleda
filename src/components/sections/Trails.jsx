@@ -60,7 +60,7 @@ export function Trails() {
               <TrailCard key={trail.title} trail={trail} />
             ))}
           </div>
-          <div className="md:hidden text-center mt-3 text-[10px] tracking-[.25em] uppercase text-white/45">
+          <div className="md:hidden text-center mt-3 text-[10px] tracking-[.25em] uppercase text-white/65">
             ← przesuń →
           </div>
         </div>

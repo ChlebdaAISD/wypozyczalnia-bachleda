@@ -12,7 +12,7 @@ export function BikeSplit({
   description,
   hourlyPrice,
   dailyNote,
-  imageSrc = '/logo.png',
+  imageSrc = '/logo.webp',
   imageAlt,
 }) {
   return (
@@ -23,6 +23,9 @@ export function BikeSplit({
             <img
               src={imageSrc}
               alt={imageAlt || title}
+              width={600}
+              height={316}
+              loading="lazy"
               className="max-w-[55%] max-h-[55%] object-contain opacity-90"
             />
           </div>

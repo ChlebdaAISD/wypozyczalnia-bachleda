@@ -179,27 +179,27 @@ export const PRICING_EXTRAS = [
   },
 ]
 
-// TODO: zastąpić /logo.png prawdziwymi zdjęciami wydarzeń (ognisko, dmuchaniec, grill, grupa)
+// TODO: zastąpić /logo.webp prawdziwymi zdjęciami wydarzeń (ognisko, dmuchaniec, grill, grupa)
 export const EVENTS_GRID = [
   {
     label: 'Ognisko · zmierzch',
     alt: 'Ognisko o zmierzchu na terenie wypożyczalni rowerów u Bachledy w Podczerwonem',
-    image: '/logo.png',
+    image: '/logo.webp',
   },
   {
     label: 'Dzieci · dmuchaniec',
     alt: 'Dmuchany zamek dla dzieci — wypożyczalnia u Bachledy organizuje urodziny',
-    image: '/logo.png',
+    image: '/logo.webp',
   },
   {
     label: 'Grill · kiełbaski',
     alt: 'Grill z kiełbaskami od miejscowego masarza — imprezy okolicznościowe u Bachledy',
-    image: '/logo.png',
+    image: '/logo.webp',
   },
   {
     label: 'Grupa · zachód słońca',
     alt: 'Grupa rowerzystów o zachodzie słońca przy wypożyczalni rowerów Podczerwone',
-    image: '/logo.png',
+    image: '/logo.webp',
   },
 ]
 

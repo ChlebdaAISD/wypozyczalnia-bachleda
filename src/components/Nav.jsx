@@ -64,7 +64,7 @@ export function Nav() {
       <nav className="sticky top-0 z-50 bg-white/95 backdrop-blur border-b border-black/5">
         <Container className="h-[72px] flex items-center justify-between">
           <Link href="/" className="brand-mark" aria-label="Wypożyczalnia Rowerów u Bachledy">
-            <img src="/logo.png" alt="Logo Wypożyczalnia Rowerów u Bachledy" />
+            <img src="/logo.webp" alt="Logo Wypożyczalnia Rowerów u Bachledy" width={600} height={316} />
           </Link>
 
           <div className="hidden md:flex items-center gap-10">
@@ -77,7 +77,7 @@ export function Nav() {
           <div className="flex items-center gap-3">
             <a
               href={CONTACT.phoneTel}
-              className="inline-flex items-center gap-2 bg-bachleda-terracotta hover:bg-bachleda-terracotta-dark text-white px-4 py-2.5 sm:px-5 text-[12px] tracking-[.18em] uppercase font-medium transition"
+              className="inline-flex items-center gap-2 bg-bachleda-terracotta-dark hover:bg-bachleda-terracotta-darker text-white px-4 py-2.5 sm:px-5 text-[12px] tracking-[.18em] uppercase font-medium transition"
             >
               <Phone size={14} strokeWidth={2} />
               <span className="hidden sm:inline">{CONTACT.phone}</span>
@@ -105,7 +105,7 @@ export function Nav() {
               className="brand-mark"
               aria-label="Wypożyczalnia Rowerów u Bachledy — strona główna"
             >
-              <img src="/logo.png" alt="Logo Wypożyczalnia Rowerów u Bachledy" />
+              <img src="/logo.webp" alt="Logo Wypożyczalnia Rowerów u Bachledy" width={600} height={316} />
             </Link>
             <button
               type="button"
@@ -153,7 +153,7 @@ export function Nav() {
             <a
               href={CONTACT.phoneTel}
               onClick={close}
-              className="mt-10 w-full inline-flex items-center justify-center gap-2 bg-bachleda-terracotta hover:bg-bachleda-terracotta-dark transition text-white px-5 py-4 text-[13px] tracking-[.18em] uppercase font-medium"
+              className="mt-10 w-full inline-flex items-center justify-center gap-2 bg-bachleda-terracotta-dark hover:bg-bachleda-terracotta-darker transition text-white px-5 py-4 text-[13px] tracking-[.18em] uppercase font-medium"
             >
               <Phone size={16} strokeWidth={2} />
               {CONTACT.phone}
