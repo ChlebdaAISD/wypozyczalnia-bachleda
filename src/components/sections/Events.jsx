@@ -35,8 +35,8 @@ export function Events() {
                 <img
                   src={item.image}
                   alt={item.alt || item.label}
-                  width={600}
-                  height={316}
+                  width={360}
+                  height={189}
                   loading="lazy"
                   className="max-w-[60%] max-h-[60%] object-contain opacity-90"
                 />

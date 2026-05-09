@@ -8,9 +8,11 @@ export function Hero() {
       <div className="hero-img-wrap" id="heroImg">
         <img
           src="/photos/hero.webp"
+          srcSet="/photos/hero-mobile.webp 960w, /photos/hero.webp 1280w"
+          sizes="100vw"
           alt="Panorama Tatr ze Szlaku Wokół Tatr — wypożyczalnia rowerów u Bachledy w Podczerwonem"
-          width={1920}
-          height={1280}
+          width={1280}
+          height={853}
           fetchPriority="high"
           decoding="async"
           className="absolute inset-0 w-full h-full object-cover"

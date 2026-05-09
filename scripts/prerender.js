@@ -97,7 +97,20 @@ async function prerender() {
     process.exit(1)
   }
 
-  const template = fs.readFileSync(templatePath, 'utf-8')
+  let template = fs.readFileSync(templatePath, 'utf-8')
+
+  // Inline the main CSS bundle to eliminate the render-blocking <link rel="stylesheet">.
+  const cssLinkMatch = template.match(/<link rel="stylesheet"[^>]*href="(\/assets\/[^"]+\.css)"[^>]*>/)
+  if (cssLinkMatch) {
+    const cssHref = cssLinkMatch[1]
+    const cssPath = path.join(distPath, cssHref.replace(/^\//, ''))
+    if (fs.existsSync(cssPath)) {
+      const cssContent = fs.readFileSync(cssPath, 'utf-8')
+      template = template.replace(cssLinkMatch[0], `<style>${cssContent}</style>`)
+      console.log(`  Inlined CSS: ${cssHref} (${(cssContent.length / 1024).toFixed(1)} KB)`)
+    }
+  }
+
   const { render, getRoutes } = await import(serverEntryPath)
   const routes = getRoutes()
 
