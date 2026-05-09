@@ -234,8 +234,8 @@
 .event-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
 .event-grid > * { aspect-ratio: 1/1; }
 
-/* fade-up base for GSAP entry */
-.fade-up { opacity: 0; transform: translateY(30px); }
+/* fade-up: visible by default; only hero children animate via GSAP */
+.fade-up { opacity: 1; transform: none; }
 
 /* IntersectionObserver reveal (.rv) */
 .rv {

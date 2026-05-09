@@ -2,13 +2,7 @@ import { useEffect } from 'react'
 
 export function useHeroAnim() {
   useEffect(() => {
-    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
-      document.querySelectorAll('.fade-up').forEach((el) => {
-        el.style.opacity = 1
-        el.style.transform = 'none'
-      })
-      return
-    }
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return
 
     let cancelled = false
     let ctx
@@ -41,15 +35,6 @@ export function useHeroAnim() {
             delay: 0.15,
           })
         }
-        document.querySelectorAll('.fade-up').forEach((el) => {
-          gsap.to(el, {
-            opacity: 1,
-            y: 0,
-            duration: 1.1,
-            ease: 'power2.out',
-            scrollTrigger: { trigger: el, start: 'top 85%' },
-          })
-        })
       })
     })()
 
