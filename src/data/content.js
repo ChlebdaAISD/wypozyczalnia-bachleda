@@ -184,22 +184,22 @@ export const EVENTS_GRID = [
   {
     label: 'Ognisko · zmierzch',
     alt: 'Ognisko o zmierzchu na terenie wypożyczalni rowerów u Bachledy w Podczerwonem',
-    image: '/logo.webp',
+    image: '/logo-sm.webp',
   },
   {
     label: 'Dzieci · dmuchaniec',
     alt: 'Dmuchany zamek dla dzieci — wypożyczalnia u Bachledy organizuje urodziny',
-    image: '/logo.webp',
+    image: '/logo-sm.webp',
   },
   {
     label: 'Grill · kiełbaski',
     alt: 'Grill z kiełbaskami od miejscowego masarza — imprezy okolicznościowe u Bachledy',
-    image: '/logo.webp',
+    image: '/logo-sm.webp',
   },
   {
     label: 'Grupa · zachód słońca',
     alt: 'Grupa rowerzystów o zachodzie słońca przy wypożyczalni rowerów Podczerwone',
-    image: '/logo.webp',
+    image: '/logo-sm.webp',
   },
 ]
 
