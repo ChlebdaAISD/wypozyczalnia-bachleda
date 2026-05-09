@@ -9,7 +9,8 @@
     "build:client": "vite build",
     "build:ssr": "vite build --config vite.config.ssr.js",
     "build:prerender": "node scripts/prerender.js",
-    "preview": "vite preview"
+    "preview": "npm run build:client && wrangler dev",
+    "deploy": "npm run build:client && wrangler deploy"
   },
   "engines": {
     "node": ">=22"
@@ -26,9 +27,11 @@
     "wouter": "^3.9.0"
   },
   "devDependencies": {
+    "@cloudflare/vite-plugin": "^1.36.3",
     "@tailwindcss/vite": "^4.0.0",
     "@vitejs/plugin-react": "^4.3.4",
     "tailwindcss": "^4.0.0",
-    "vite": "^6.0.0"
+    "vite": "^6.0.0",
+    "wrangler": "^4.90.0"
   }
 }
