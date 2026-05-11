@@ -18,32 +18,32 @@ export function Events() {
           </h2>
           <Divider />
           <p className="text-[15px] leading-[1.75] text-bachleda-charcoal/70">
-            Po przejażdżce zostań na dłużej. Mamy zadaszone miejsce na ognisko, grill z kiełbaskami od miejscowego masarza i dmuchaniec dla najmłodszych. Organizujemy urodziny, wieczory firmowe i rodzinne pikniki.
+            Po przejażdżce zostań na dłużej. Mamy zadaszone miejsce na ognisko i grill z kiełbaskami od miejscowego masarza. Organizujemy urodziny, wieczory firmowe i rodzinne pikniki.
           </p>
         </div>
 
-        <div className="mt-16 max-w-[920px] mx-auto">
-          <div className="flex md:grid md:grid-cols-4 gap-3 md:gap-4 overflow-x-auto md:overflow-visible snap-x snap-mandatory md:snap-none pb-4 md:pb-0 scrollbar-hide">
+        <div className="mt-16 max-w-[1080px] mx-auto">
+          <div className="flex gap-3 md:gap-4 overflow-x-auto snap-x snap-mandatory pb-4 scrollbar-hide">
             {EVENTS_GRID.map((item, i) => (
               <button
                 key={item.label}
                 type="button"
                 onClick={() => setLbIndex(i)}
                 aria-label={`Powiększ zdjęcie: ${item.label}`}
-                className="lift-on-hover bg-bachleda-soft-gray flex items-center justify-center p-4 cursor-zoom-in overflow-hidden snap-start shrink-0 w-[55%] sm:w-[42%] md:w-auto aspect-square"
+                className="lift-on-hover bg-bachleda-soft-gray cursor-zoom-in overflow-hidden snap-start shrink-0 w-[55%] sm:w-[42%] md:w-[calc((100%-3rem)/4)] aspect-square"
               >
                 <img
                   src={item.image}
                   alt={item.alt || item.label}
-                  width={360}
-                  height={189}
+                  width={item.imgWidth}
+                  height={item.imgHeight}
                   loading="lazy"
-                  className="max-w-[60%] max-h-[60%] object-contain opacity-90"
+                  className="w-full h-full object-cover"
                 />
               </button>
             ))}
           </div>
-          <div className="md:hidden text-center mt-2 text-[10px] tracking-[.25em] uppercase text-bachleda-charcoal/70">
+          <div className="text-center mt-2 text-[10px] tracking-[.25em] uppercase text-bachleda-charcoal/70">
             ← przesuń →
           </div>
         </div>

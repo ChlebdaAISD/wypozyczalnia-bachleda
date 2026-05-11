@@ -179,27 +179,69 @@ export const PRICING_EXTRAS = [
   },
 ]
 
-// TODO: zastąpić /logo.webp prawdziwymi zdjęciami wydarzeń (ognisko, dmuchaniec, grill, grupa)
 export const EVENTS_GRID = [
   {
-    label: 'Ognisko · zmierzch',
-    alt: 'Ognisko o zmierzchu na terenie wypożyczalni rowerów u Bachledy w Podczerwonem',
-    image: '/logo-sm.webp',
+    label: 'Wypożyczalnia · grill bar',
+    alt: 'Front budynku wypożyczalni rowerów u Bachledy w Podczerwonem z szyldem grill bar',
+    image: '/photos/budynek-wypozyczalni-bachleda.webp',
+    imgWidth: 1920,
+    imgHeight: 1441,
   },
   {
-    label: 'Dzieci · dmuchaniec',
-    alt: 'Dmuchany zamek dla dzieci — wypożyczalnia u Bachledy organizuje urodziny',
-    image: '/logo-sm.webp',
+    label: 'Bar · napoje i lody',
+    alt: 'Drewniana lada baru w wypożyczalni u Bachledy — napoje, lody, menu',
+    image: '/photos/bar-grill-napoje-lody.webp',
+    imgWidth: 1920,
+    imgHeight: 1441,
   },
   {
-    label: 'Grill · kiełbaski',
-    alt: 'Grill z kiełbaskami od miejscowego masarza — imprezy okolicznościowe u Bachledy',
-    image: '/logo-sm.webp',
+    label: 'Menu · grill bar',
+    alt: 'Tablica menu grill baru u Bachledy z cennikiem kiełbasy, hamburgera, kaszanki',
+    image: '/photos/tablica-cennik-grill-bar.webp',
+    imgWidth: 1080,
+    imgHeight: 1440,
   },
   {
-    label: 'Grupa · zachód słońca',
-    alt: 'Grupa rowerzystów o zachodzie słońca przy wypożyczalni rowerów Podczerwone',
-    image: '/logo-sm.webp',
+    label: 'Polecamy · dania',
+    alt: 'Drewniana tablica polecamy z cennikiem dań grillowych u Bachledy w Podczerwonem',
+    image: '/photos/tablica-polecamy-menu-grill.webp',
+    imgWidth: 1080,
+    imgHeight: 1440,
+  },
+  {
+    label: 'Cennik · rowery',
+    alt: 'Cennik wypożyczenia rowerów zwykłych i elektrycznych w wypożyczalni u Bachledy',
+    image: '/photos/cennik-rowery-elektryczne-zwykle.webp',
+    imgWidth: 1920,
+    imgHeight: 1441,
+  },
+  {
+    label: 'Wypożyczalnia · front',
+    alt: 'Wypożyczalnia rowerów u Bachledy — widok z przodu, parking rowerów i parasole',
+    image: '/photos/wypozyczalnia-rowery-front.webp',
+    imgWidth: 1920,
+    imgHeight: 1441,
+  },
+  {
+    label: 'Rowery · Czarny Dunajec',
+    alt: 'Rowery zaparkowane nad rzeką Czarny Dunajec niedaleko wypożyczalni u Bachledy',
+    image: '/photos/rowery-nad-czarnym-dunajcem.webp',
+    imgWidth: 1080,
+    imgHeight: 1440,
+  },
+  {
+    label: 'Ścieżka · most kolejowy',
+    alt: 'Ścieżka rowerowa Velo Czarny Dunajec prowadząca przez zabytkowy most kolejowy',
+    image: '/photos/sciezka-rowerowa-most-kolejowy.webp',
+    imgWidth: 1080,
+    imgHeight: 1440,
+  },
+  {
+    label: 'Rzeka Czarny Dunajec',
+    alt: 'Rzeka Czarny Dunajec — plaża i las niedaleko wypożyczalni rowerów u Bachledy',
+    image: '/photos/rzeka-czarny-dunajec.webp',
+    imgWidth: 1920,
+    imgHeight: 1441,
   },
 ]
 

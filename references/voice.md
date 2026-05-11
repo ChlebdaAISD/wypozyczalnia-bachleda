@@ -56,7 +56,7 @@ Frazy, które chętnie powtarzamy w treściach Wypożyczalni Rowerów u Bachledy
 - "po nasypie dawnej linii kolejowej" — opowiadamy historię trasy (Nowy Targ – Sucha Góra)
 - "panorama Tatr, Gorców i Babiej Góry" — co widzimy z trasy
 - "domowe wypieki", "regionalna kuchnia", "kiełbaska z grilla"
-- "ognisko dla rodzin", "dmuchaniec dla dzieci"
+- "ognisko dla rodzin"
 - "Szlak Wokół Tatr — 250 km przez dwa kraje" — świetna kotwica edukacyjna
 - "Państwo z dziećmi", "Państwo z rodziną" — domyślny target
 

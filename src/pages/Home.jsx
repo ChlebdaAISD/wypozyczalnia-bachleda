@@ -23,7 +23,8 @@ export function Home() {
         description="Idealne na rodzinne pętle wokół Czarnego Dunajca i przez torfowiska. Od 50 zł cały dzień. Sprawdzone trzy razy przed każdym wypożyczeniem."
         hourlyPrice="12 zł / h"
         dailyNote="albo 50 zł / cały dzień"
-        imageAlt="Rower trekkingowy — wypożyczalnia u Bachledy w Podczerwonem (TODO: dodać prawdziwe zdjęcie roweru klasycznego)"
+        imageSrc="/photos/rowery/klasyczny.webp"
+        imageAlt="Rower trekkingowy — wypożyczalnia u Bachledy w Podczerwonem"
       />
       <BikeSplit
         reversed
@@ -33,7 +34,8 @@ export function Home() {
         description="Wypożyczalnia rowerów elektrycznych na Podhalu — wjedź pod każde podejście bez zadyszki. Dobrej klasy modele, bateria na cały dzień, miękkie siodło. Idealne, gdy chce Pan/Pani dotrzeć do Chochołowa albo Witowa i wrócić z uśmiechem."
         hourlyPrice="50 zł / h"
         dailyNote="albo 200 zł / cały dzień"
-        imageAlt="Rower elektryczny e-bike — wypożyczalnia rowerów elektrycznych Podhale (TODO: dodać prawdziwe zdjęcie e-bike)"
+        imageSrc="/photos/rowery/elektryczny.webp"
+        imageAlt="Rower elektryczny e-bike — wypożyczalnia rowerów elektrycznych Podhale"
       />
       <BikeSplit
         withTopBorder
@@ -42,7 +44,8 @@ export function Home() {
         description="Idealna, gdy dziecko jeszcze za małe na samodzielną jazdę. Trzy miejsca, daszek, miejsce na termos. 60 zł cały dzień — wystarczy na trasę do Witowa i z powrotem."
         hourlyPrice="12 zł / h"
         dailyNote="albo 60 zł / cały dzień"
-        imageAlt="Riksza rodzinna trzyosobowa — wypożyczalnia u Bachledy (TODO: dodać prawdziwe zdjęcie rikszy)"
+        imageSrc="/photos/rowery/riksza.webp"
+        imageAlt="Riksza rodzinna trzyosobowa — wypożyczalnia u Bachledy"
       />
       <Trails />
       <Events />

@@ -103,7 +103,7 @@ Format: zawsze konkretnie. "od XXX PLN" / "XXX PLN flat". Nigdy "atrakcyjne ceny
 
 ## Imprezy okolicznościowe
 
-- **Dla dzieci:** urodziny, dmuchaniec, ognisko
+- **Dla dzieci:** urodziny, ognisko
 - **Dla dorosłych:** ognisko, grill, kiełbaski, dania regionalne
 - **Cennik imprez:** TODO (uzupełnij po rozmowie z klientką)
 
@@ -117,7 +117,7 @@ Inne wypożyczalnie na Szlaku Wokół Tatr:
 - **Wypożyczalnia Dolina Chochołowska** — rowerychocholowska.pl
 - **Kosmal Bike** (Czorsztyn) — kosmalbike.pl
 
-**Nasza przewaga:** lokalizacja dosłownie na trasie głównej + parking + gastronomia + ognisko + dmuchaniec — żaden konkurent nie ma full pakietu "wsiadasz z naszego parkingu, wracasz na kiełbaskę".
+**Nasza przewaga:** lokalizacja dosłownie na trasie głównej + parking + gastronomia + ognisko — żaden konkurent nie ma full pakietu "wsiadasz z naszego parkingu, wracasz na kiełbaskę".
 
 ---
 

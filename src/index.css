@@ -226,6 +226,25 @@
 .split.reversed > :first-child { order: 2; }
 @media (max-width: 900px) { .split.reversed > :first-child { order: 0; } }
 
+/* bike split: 3 children (header / image / body) — desktop 2 cols, mobile stacked header→image→body */
+.bike-split {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "image header" "image body";
+}
+.bike-split.reversed {
+  grid-template-areas: "header image" "body image";
+}
+.bike-split > :nth-child(1) { grid-area: header; }
+.bike-split > :nth-child(2) { grid-area: image; }
+.bike-split > :nth-child(3) { grid-area: body; }
+@media (max-width: 900px) {
+  .bike-split, .bike-split.reversed {
+    grid-template-columns: 1fr;
+    grid-template-areas: "header" "image" "body";
+  }
+}
+
 /* image inset for split */
 .split-img { aspect-ratio: 4/5; width: 100%; }
 @media (max-width: 900px) { .split-img { aspect-ratio: 5/4; } }

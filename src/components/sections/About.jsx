@@ -25,7 +25,7 @@ export function About() {
           </p>
 
           <p className="mt-5 text-[15px] leading-[1.75] text-bachleda-charcoal/80">
-            Organizujemy też imprezy okolicznościowe dla dzieci i dorosłych — urodziny, ogniska, grilla. Na najmłodszych czeka dmuchaniec.
+            Organizujemy też imprezy okolicznościowe dla dzieci i dorosłych — urodziny, ogniska, grilla.
           </p>
 
           <div className="mt-8 signature-accent text-bachleda-charcoal/70">

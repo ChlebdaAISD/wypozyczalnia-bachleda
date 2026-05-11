@@ -14,7 +14,7 @@ Wypożyczalnia Rowerów u Bachledy zlokalizowana jest na granicy Podczerwonego i
 
 U nas możesz zostawić samochód, wypożyczyć rower i aktywnie spędzić czas, podziwiając przyrodę, torfowiska, lasy, panoramę Tatr, Gorców i Babiej Góry.
 
-U nas można zorganizować imprezy okolicznościowe dla dzieci i dorosłych — urodziny, ognisko, grill. Na dzieci czeka dmuchaniec.
+U nas można zorganizować imprezy okolicznościowe dla dzieci i dorosłych — urodziny, ognisko, grill.
 
 Więcej szczegółów na naszej stronie i FB:
 - www.rowery.bachleda.biz
