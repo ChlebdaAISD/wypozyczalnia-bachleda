@@ -1,10 +1,33 @@
 import fs from 'fs'
 import path from 'path'
 import { fileURLToPath } from 'url'
+import { updateGoogleRating } from './fetch-google-rating.js'
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url))
 const distPath = path.resolve(__dirname, '../dist/public')
 const serverDistPath = path.resolve(__dirname, '../dist/server')
+const ratingPath = path.resolve(__dirname, '../src/data/google-rating.json')
+
+// Wstrzykuje aktualną ocenę Google (ratingValue + reviewCount) do statycznego bloku
+// LocalBusiness JSON-LD w szablonie. Wartości z src/data/google-rating.json (odświeżane
+// build-time przez fetch-google-rating.js). Gdy plik/wartości brak — zostawia fallback z index.html.
+function injectGoogleRating(html) {
+  try {
+    if (!fs.existsSync(ratingPath)) return html
+    const { ratingValue, reviewCount } = JSON.parse(fs.readFileSync(ratingPath, 'utf-8'))
+    // Scope wyłącznie do obiektu aggregateRating (brak nested braces) — nie ruszamy reszty HTML/bundli.
+    return html.replace(/"aggregateRating"\s*:\s*\{[\s\S]*?\}/, (block) => {
+      let b = block
+      if (ratingValue != null) b = b.replace(/("ratingValue"\s*:\s*)"[^"]*"/, `$1"${ratingValue}"`)
+      if (reviewCount != null) b = b.replace(/("reviewCount"\s*:\s*)"[^"]*"/, `$1"${reviewCount}"`)
+      console.log(`  Injected Google rating: ${ratingValue} / ${reviewCount} opinii`)
+      return b
+    })
+  } catch (e) {
+    console.warn('  Rating injection skipped:', e.message)
+    return html
+  }
+}
 
 function updateMetaTags(html, meta) {
   let result = html
@@ -84,6 +107,9 @@ function generateSitemap(routes, domain) {
 async function prerender() {
   console.log('Starting SSR prerendering...')
 
+  // Odśwież ocenę Google (live) przed wstrzyknięciem do schema. Graceful — nie blokuje builda.
+  await updateGoogleRating()
+
   const templatePath = path.join(distPath, 'index.html')
   const serverEntryPath = path.join(serverDistPath, 'entry-server.js')
 
@@ -98,6 +124,9 @@ async function prerender() {
   }
 
   let template = fs.readFileSync(templatePath, 'utf-8')
+
+  // Wstrzyknij aktualną ocenę Google do LocalBusiness JSON-LD (dotyczy wszystkich prerenderowanych stron).
+  template = injectGoogleRating(template)
 
   // Inline the main CSS bundle to eliminate the render-blocking <link rel="stylesheet">.
   const cssLinkMatch = template.match(/<link rel="stylesheet"[^>]*href="(\/assets\/[^"]+\.css)"[^>]*>/)
