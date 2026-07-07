@@ -29,9 +29,9 @@ export function Trail() {
 
   const idx = TRAILS.findIndex((t) => t.slug === trail.slug)
   const next = TRAILS[(idx + 1) % TRAILS.length]
-  const mapsSrc = `https://www.google.com/maps?q=${encodeURIComponent(
+  const mapsSrc = `https://www.google.com/maps/embed/v1/place?key=${import.meta.env.VITE_GOOGLE_MAPS_EMBED_KEY}&q=${encodeURIComponent(
     trail.mapsQuery
-  )}&output=embed&z=12`
+  )}&zoom=12`
 
   return (
     <main className="bg-bachleda-cream">
